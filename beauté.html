@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="logo2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pineda Pinell | Moda y Estilo</title>
+    <link rel="stylesheet" href="beauté.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-left">
+        <a href="index.html" class="logo-link">
+            <img src="logo2.png" alt="Pineda Pinell" class="logo-img">
+        </a>
+    </div>
+
+    <div class="header-center">
+        <div class="search-box-pro">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Buscar un producto..." id="search-input">
+        </div>
+    </div>
+
+    <div class="header-right">
+  
+
+     <button class="trigger-bouton" id="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</button> 
+
+<div class="rideau-menu" id="rideau">
+    <div class="fermer-menu" id="close-btn">&times;</div>
+    <ul class="liens-navigation">
+         <li><a href="index.html">Inicio</a></li>
+            <li><a href="#produits">Tienda</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#À Propos">Sobre Nosotros</a></li>
+    </ul>
+</div>
+</header>
+
+<script>
+    const btnOuvrir = document.getElementById('menu-btn');
+    const btnFermer = document.getElementById('close-btn');
+    const rideau = document.getElementById('rideau');
+
+    // Cuando se hace clic en las 3 barras
+    btnOuvrir.onclick = function() {
+        rideau.classList.add('ouvert');
+    };
+
+    // Cuando se hace clic en la cruz
+    btnFermer.onclick = function() {
+        rideau.classList.remove('ouvert');
+    };
+
+    // Cerrar si se hace clic en un enlace
+    document.querySelectorAll('.liens-navigation a').forEach(lien => {
+        lien.onclick = () => rideau.classList.remove('ouvert');
+    });
+</script>
+<div class="category-bar">
+    <div class="category-container">
+       <a href="mode.html" class="category-btn">
+       <i class="fas fa-tshirt"></i> Moda y Ropa
+      </a>
+        <a href="tech.html" class="category-btn">
+            <i class="fas fa-bolt"></i> High-Tech y Electrodomésticos
+        </a>
+        <a href="beauté.html" class="category-btn">
+            <i class="fas fa-magic"></i> Belleza y Cuidado
+        </a>
+    </div>
+</div>
+
+    <div class="products-grid">
+          <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="huile pour cheveux 1.jpeg" alt="aceite para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>aceite para el cabello original</h3>
+                      <p class="price">550C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+    
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="huiile pour cheveux 2.jpeg" alt="aceite para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>aceite para el cabello original</h3>
+                      <p class="price">550C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="huile pour cheveux 3.jpeg" alt="aceite para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>aceite para el cabello original</h3>
+                      <p class="price">550C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="produit pour cheveux 1.1.jpeg" alt="Producto para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>aceite para el cabello original</h3>
+                      <p class="price">550C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="produit pour cheveux1.2.jpeg" alt="Producto para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>aceite para el cabello original</h3>
+                      <p class="price">550C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="produit pour cheveux1.3.jpeg" alt="Producto para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>aceite para el cabello original</h3>
+                      <p class="price">550C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="produit pour les cheveux1.jpeg" alt="Producto para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Producto para el cabello original</h3>
+                      <p class="price">350C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="produit pour cheveux 2.jpeg" alt="Producto para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Producto para el cabello original</h3>
+                      <p class="price">350C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="produit pourn cheveux 3.jpeg" alt="Producto para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Producto para el cabello original</h3>
+                      <p class="price">350C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="produit pour cheveux 4.jpeg" alt="Producto para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Producto para el cabello original</h3>
+                      <p class="price">470C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="produit pour cheveux2.1.jpeg" alt="Producto para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Producto para el cabello original</h3>
+                      <p class="price">700C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="produit pour cheveux2.2.jpeg" alt="Producto para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Producto para el cabello original</h3>
+                      <p class="price">700C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="produit pour cheveux2.3.jpeg" alt="Producto para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Producto para el cabello original</h3>
+                      <p class="price">700C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="peigne 1.1.jpeg" alt="Peine para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Peine para el cabello</h3>
+                      <p class="price">460C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="peigne 1.jpeg" alt="Peine para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Peine para el cabello</h3>
+                      <p class="price">460C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="peigne 3.jpeg" alt="Peine para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Peine para el cabello</h3>
+                      <p class="price">460C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="peigne 4.jpeg" alt="Peine para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Peine para el cabello</h3>
+                      <p class="price">460C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="peigne2.jpeg" alt="Peine para el cabello"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Peine para el cabello</h3>
+                      <p class="price">460C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="claire 1.jpeg" alt="Base de maquillaje"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Base de maquillaje original</h3>
+                      <p class="price">270C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="claire 2.jpeg" alt="Base de maquillaje"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Base de maquillaje original</h3>
+                      <p class="price">270C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="claire 4.jpeg" alt="Base de maquillaje"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Base de maquillaje original</h3>
+                      <p class="price">270C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="rouge a lèvre 1.jpeg" alt="Lápiz labial"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Lápiz labial original</h3>
+                      <p class="price">250C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="rouge a lèvre 2.jpeg" alt="Lápiz labial"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Lápiz labial original</h3>
+                      <p class="price">250C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="rouge a lèvre 3.jpeg" alt="Lápiz labial"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Lápiz labial original</h3>
+                      <p class="price">250C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="rouge a lèvre 4.jpeg" alt="Lápiz labial"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Lápiz labial original</h3>
+                      <p class="price">250C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="rouge a lèvre 5.jpeg" alt="Lápiz labial"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Lápiz labial original</h3>
+                      <p class="price">250C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="sac 5.jpeg" alt="bolso de mano"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Bolso de mano original</h3>
+                      <p class="price">550C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="sac pro 1.jpeg" alt="bolso de mano"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Bolso de mano original</h3>
+                      <p class="price">595C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="sac pro 2.jpeg" alt="bolso de mano"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Bolso de mano original</h3>
+                      <p class="price">595C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="sac pro 3.jpeg" alt="bolso de mano"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Bolso de mano original</h3>
+                      <p class="price">595C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="sac1.jpeg" alt="bolso de mano"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Bolso de mano original</h3>
+                      <p class="price">550C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="sac2.jpeg" alt="bolso de mano"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Bolso de mano original</h3>
+                      <p class="price">550C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+
+<div class="product-card" data-category="Belleza y Cuidado">
+            <div class="product-img">
+                <img src="sac3.jpeg" alt="bolso de mano"> 
+                  <span class="tag">Belleza y Cuidado</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Bolso de mano original</h3>
+                      <p class="price">550C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20 producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div> 
+</section>
+
+
+                                                                                                                                                                                                                                                                                                                                                                            
+<script>
+    const btn = document.getElementById('burger-trigger');
+    const menu = document.getElementById('side-menu');
+    btn.onclick = () => { menu.classList.toggle('active'); btn.classList.toggle('open'); };
+
+    document.getElementById('search-input').onkeyup = function() {
+        let val = this.value.toLowerCase();
+        document.querySelectorAll('.product-card').forEach(card => {
+            let title = card.querySelector('h3').innerText.toLowerCase();
+            card.style.display = title.includes(val) ? "" : "none";
+        });
+    };
+</script>
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section brand-info">
+      <h2 class="footer-logo">Pineda<span>Pinell</span></h2>
+      <p>Experiencia en comercio digital. Le acompañamos en la elección de los mejores smartphones y dispositivos electrónicos.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Tienda</h3>
+      <ul>
+        <li><a href="#">Smartphones</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Gadgets</a></li>
+        <li><a href="#">Promociones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Ayuda e Información</h3>
+      <ul>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Condiciones Generales</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Envíos y Devoluciones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contacto Rápido</h3>
+      <p class="contact-item"><strong>📞 Tel:</strong> +505 8173 3386</p>
+      <p class="contact-item"><strong>📧 Email:</strong>marthitapinell83@gmail.com</p>
+      <p class="whatsapp-badge">WhatsApp 24/7</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 <strong>Pineda Pinell</strong> - Comercio Digital. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* --- 1. VARIABLES ET RESET --- */
+:root {
+    --bleu-nuit: #050B28;
+    --cyan: #00F2FF;
+    --blanc: #ffffff;
+    --gris-clair: #f8f9fa;
+    --shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body { background: var(--gris-clair); overflow-x: hidden; width: 100%; }
+
+/* --- 2. HEADER DYNAMIQUE --- */
+.main-header {
+    background: var(--bleu-nuit);
+    height: 85px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%;
+    position: sticky; top: 0; z-index: 2000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-img { max-height: 55px; width: auto; }
+
+/* Recherche */
+.header-center { flex: 0 1 400px; margin: 0 15px; position: relative; }
+.search-box-pro { width: 100%; display: flex; align-items: center; }
+.search-icon { position: absolute; left: 15px; color: var(--cyan); font-size: 14px; }
+
+#search-input {
+    width: 100%; background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 242, 255, 0.3); border-radius: 25px;
+    padding: 10px 15px 10px 40px; color: white; outline: none; transition: 0.3s;
+}
+#search-input:focus { border-color: var(--cyan); background: rgba(255, 255, 255, 0.15); }
+
+/* Bouton Burger */
+.trigger-bouton {
+    background: none; border: none; cursor: pointer;
+    display: flex; flex-direction: column; gap: 5px;
+}
+.trigger-bouton span { width: 28px; height: 3px; background: var(--cyan); border-radius: 2px; }
+
+/* --- 3. BARRE DE CATÉGORIES --- */
+.category-bar {
+    background: var(--bleu-nuit);
+    padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.05);
+    position: sticky; top: 85px; z-index: 1500;
+}
+.category-container {
+    display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; padding: 0 20px;
+}
+.category-btn {
+    text-decoration: none; color: white; background: rgba(255,255,255,0.05);
+    padding: 8px 15px; border-radius: 20px; font-size: 0.85rem;
+    transition: 0.3s; border: 1px solid transparent;
+}
+.category-btn i { color: var(--cyan); margin-right: 5px; }
+.category-btn:hover { background: var(--cyan); color: var(--bleu-nuit); }
+
+/* --- 4. GRILLE DE PRODUITS --- */
+.products-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; padding: 40px 5%;
+    max-width: 1400px; margin: 0 auto;
+}
+
+.product-card { 
+    background: white; border-radius: 15px; overflow: hidden; 
+    box-shadow: var(--shadow); transition: 0.3s; position: relative;
+}
+.product-card:hover { transform: translateY(-8px); }
+
+.product-img img { width: 100%; height: 320px; object-fit: cover; }
+.tag {
+    position: absolute; top: 10px; left: 10px;
+    background: var(--cyan); color: var(--bleu-nuit);
+    padding: 5px 12px; border-radius: 15px; font-size: 11px; font-weight: bold;
+}
+
+.product-info { padding: 20px; text-align: center; }
+.price { color: #0066FF; font-weight: bold; font-size: 1.2rem; margin: 10px 0; }
+.buy-btn {
+    width: 100%; background: var(--bleu-nuit); color: white; border: none;
+    padding: 12px; border-radius: 25px; font-weight: bold; cursor: pointer; transition: 0.3s;
+}
+.buy-btn:hover { background: var(--cyan); color: var(--bleu-nuit); }
+
+/* --- 5. MENU RIDEAU --- */
+.rideau-menu {
+    position: fixed; top: 0; right: -100%; 
+    width: 280px; height: 100vh;
+    background: var(--bleu-nuit); border-left: 3px solid var(--cyan);
+    z-index: 3000; transition: 0.4s ease; padding: 60px 30px;
+}
+.rideau-menu.ouvert { right: 0; }
+.fermer-menu { position: absolute; top: 20px; right: 20px; font-size: 35px; color: var(--cyan); cursor: pointer; }
+.liens-navigation { list-style: none; margin-top: 30px; }
+.liens-navigation li { margin-bottom: 20px; }
+.liens-navigation a { color: white; text-decoration: none; font-size: 1.3rem; font-weight: 600; }
+
+
+/* --- 7. FOOTER --- */
+.footer { background: var(--bleu-nuit); color: white; padding: 60px 5% 20px; margin-top: 50px; }
+.footer-container {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px; max-width: 1200px; margin: 0 auto;
+}
+.footer-logo span { color: var(--cyan); }
+.footer-section h3 { margin-bottom: 20px; font-size: 1.1rem; color: var(--cyan); }
+.footer-section ul { list-style: none; }
+.footer-section ul li { margin-bottom: 10px; }
+.footer-section a { color: #ccc; text-decoration: none; transition: 0.3s; }
+.footer-section a:hover { color: var(--cyan); }
+.footer-bottom { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 13px; }
+
+/* --- 8. RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+    .main-header { height: 75px; }
+    .header-center { display: none; } /* Cache la recherche sur petit écran */
+    .category-bar { top: 75px; }
+    
+    .products-grid { 
+        grid-template-columns: repeat(2, 1fr); /* 2 produits par ligne */
+        gap: 15px; padding: 20px 3%;
+    }
+    .product-img img { height: 200px; }
+    .product-info h3 { font-size: 0.9rem; }
+    .price { font-size: 1rem; } 
+    .buy-btn { font-size: 0.8rem; padding: 10px 5px; }
+}
+
+@media (max-width: 480px) {
+    .category-btn { font-size: 0.75rem; padding: 6px 10px; }
+}

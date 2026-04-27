@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="logo2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pineda Pinell | Moda y Estilo</title>
+    <link rel="stylesheet" href="mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-left">
+        <a href="index.html" class="logo-link">
+            <img src="logo2.png" alt="Pineda Pinell" class="logo-img">
+        </a>
+    </div>
+
+    <div class="header-center">
+        <div class="search-box-pro">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Buscar un producto..." id="search-input">
+        </div>
+    </div>
+
+    <div class="header-right">
+      
+     <button class="trigger-bouton" id="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<div class="rideau-menu" id="rideau">
+    <div class="fermer-menu" id="close-btn">&times;</div>
+    <ul class="liens-navigation">
+         <li><a href="index.html">Inicio</a></li>
+            <li><a href="#produits">Tienda</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#À Propos">Sobre Nosotros</a></li>
+            
+    </ul>
+</div>
+</header>
+
+<script>
+    const btnOuvrir = document.getElementById('menu-btn');
+    const btnFermer = document.getElementById('close-btn');
+    const rideau = document.getElementById('rideau');
+
+    // Al hacer clic en las 3 barras
+    btnOuvrir.onclick = function() {
+        rideau.classList.add('ouvert');
+    };
+
+    // Al hacer clic en la cruz
+    btnFermer.onclick = function() {
+        rideau.classList.remove('ouvert');
+    };
+
+    // Cerrar si se hace clic en un enlace
+    document.querySelectorAll('.liens-navigation a').forEach(lien => {
+        lien.onclick = () => rideau.classList.remove('ouvert');
+    });
+</script>
+
+<div class="category-bar">
+    <div class="category-container">
+       <a href="mode.html" class="category-btn">
+       <i class="fas fa-tshirt"></i> Moda y Ropa
+      </a>
+        <a href="tech.html" class="category-btn">
+            <i class="fas fa-bolt"></i> High-Tech y Electrodomésticos
+        </a>
+        <a href="beauté.html" class="category-btn">
+            <i class="fas fa-magic"></i> Belleza y Cuidado
+        </a>
+    </div>
+</div>
+
+
+    <div class="products-grid">
+     <div class="product-card" data-category="Moda y Ropa">
+        <div class="product-img">
+          <img src="collant pour dame1.jpeg" alt="malla">
+             <span class="tag">Moda y Ropa</span>
+                </div>
+                   <div class="product-info">
+                     <h3>Malla sexy</h3>
+                       <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                      target="_blank" 
+                    class="whatsapp-btn">
+                 <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+        
+   <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame 2.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+        
+        <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame 2.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+     <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame 3.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+     <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame 4.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+     <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame 5.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+     <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame 6.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+     <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame 7.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+     <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame 8.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+     <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame 9.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+     <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame10.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+             <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="collant dame11.jpeg" alt="malla">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Malla sexy</h3>
+                      <p class="price">255C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+    <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="habille pour dame .jpeg" alt="atuendo">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Atuendo sexy</h3>
+                      <p class="price">350C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="habille pour dame1.jpeg" alt="vestido">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Vestido sexy</h3>
+                      <p class="price">350C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="habille pour dame2.jpeg" alt="vestido">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Vestido sexy</h3>
+                      <p class="price">350C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="habille pour dame3.jpeg" alt="vestido">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Vestido sexy</h3>
+                      <p class="price">350C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+             <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="habille pour homme 1.jpeg" alt="camiseta y pantalón hombre">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Camiseta y pantalón para hombre</h3>
+                      <p class="price">430C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+    <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="habille pour  homme2.jpeg" alt="camiseta y pantalón hombre">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Camiseta y pantalón para hombre</h3>
+                      <p class="price">430C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+    <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="habille pour homme3.jpeg" alt="camiseta y pantalón hombre">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Camiseta y pantalón para hombre</h3>
+                      <p class="price">430C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="chausette .jpeg" alt="calcetín">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Calcetines</h3>
+                      <p class="price">150C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+
+  <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="chaussette 2.jpeg" alt="calcetín">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Calcetines</h3>
+                      <p class="price">150C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+
+  <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="chaussure 1.jpeg" alt="zapato">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Zapato original</h3>
+                      <p class="price">150C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="chaussure2.jpeg" alt="zapato">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Zapato original</h3>
+                      <p class="price">150C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="chaussure 3.jpeg" alt="zapato">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Zapato original</h3>
+                      <p class="price">150C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+  <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="chaussure 4.jpeg" alt="zapato">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Zapato original</h3>
+                      <p class="price">150C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+          <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="sac a dos 1.jpeg" alt="mochila">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Mochila original</h3>
+                      <p class="price">595C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+
+          <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="sac a dos 2.jpeg" alt="mochila">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Mochila original</h3>
+                      <p class="price">595C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+
+          <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="Sac a dos 3.jpeg" alt="mochila">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Mochila original</h3>
+                      <p class="price">595C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+
+          <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="sac a dos 4.jpeg" alt="mochila">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Mochila original</h3>
+                      <p class="price">595C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+
+          <div class="product-card" data-category="Moda y Ropa">
+            <div class="product-img">
+                <img src="Sac a dos 5.jpeg" alt="mochila">
+                  <span class="tag">Moda y Ropa</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Mochila original</h3>
+                      <p class="price">595C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">Pedir por WhatsApp</button>
+                 </a>
+            </div>
+        </div>
+
+
+    </div> 
+</section>
+
+
+<script>
+    const btn = document.getElementById('burger-trigger');
+    const menu = document.getElementById('side-menu');
+    btn.onclick = () => { menu.classList.toggle('active'); btn.classList.toggle('open'); };
+
+    document.getElementById('search-input').onkeyup = function() {
+        let val = this.value.toLowerCase();
+        document.querySelectorAll('.product-card').forEach(card => {
+            let title = card.querySelector('h3').innerText.toLowerCase();
+            card.style.display = title.includes(val) ? "" : "none";
+        });
+    };
+</script>
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section brand-info">
+      <h2 class="footer-logo">Pineda<span>Pinell</span></h2>
+      <p>Expertos en comercio digital. Te acompañamos en la elección de los mejores smartphones y dispositivos electrónicos.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Tienda</h3>
+      <ul>
+        <li><a href="#">Smartphones</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Gadgets</a></li>
+        <li><a href="#">Promociones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Ayuda e Info</h3>
+      <ul>
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Condiciones generales</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Envíos y Devoluciones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contacto Rápido</h3>
+      <p class="contact-item"><strong>📞 Tel:</strong> +505 8173 3386</p>
+      <p class="contact-item"><strong>📧 Email:</strong>marthitapinell83@gmail.com</p>
+      <p class="whatsapp-badge">WhatsApp 24/7</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 <strong>Pineda Pinell</strong> - Comercio Digital. Todos los derechos reservados.</p>
+  </div>
+</footer>
+</body>
+</html>

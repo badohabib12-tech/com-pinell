@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="logo2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | Moda y Estilo</title>
+    <link rel="stylesheet" href="tech.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+ 
+<header class="main-header">
+    <div class="header-left">
+        <a href="index.html" class="logo-link">
+            <img src="logo2.png" alt="Pineda Pinell" class="logo-img">
+        </a>
+    </div>
+
+    <div class="header-center">
+        <div class="search-box-pro">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Buscar un producto..." id="search-input">
+        </div>
+    </div>
+
+    <div class="header-right">
+        <div id="google_translate_element" class="lang-box"></div>
+
+     <button class="trigger-bouton" id="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<div class="rideau-menu" id="rideau">
+    <div class="fermer-menu" id="close-btn">&times;</div>
+    <ul class="liens-navigation">
+         <li><a href="index.html">Inicio</a></li>
+            <li><a href="#produits">Tienda</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#À Propos">Sobre nosotros</a></li>
+    </ul>
+</div>
+</header>
+
+<script>
+    const btnOuvrir = document.getElementById('menu-btn');
+    const btnFermer = document.getElementById('close-btn');
+    const rideau = document.getElementById('rideau');
+
+    // Cuando se hace clic en las 3 barras
+    btnOuvrir.onclick = function() {
+        rideau.classList.add('ouvert');
+    };
+
+    // Cuando se hace clic en la cruz
+    btnFermer.onclick = function() {
+        rideau.classList.remove('ouvert');
+    };
+
+    // Cerrar si se hace clic en un enlace
+    document.querySelectorAll('.liens-navigation a').forEach(lien => {
+        lien.onclick = () => rideau.classList.remove('ouvert');
+    });
+</script>
+<div class="category-bar">
+    <div class="category-container">
+        <a href="mode.html" class="category-btn">
+        <i class="fas fa-tshirt"></i> Moda y Ropa
+      </a>
+        <a href="tech.html" class="category-btn">
+            <i class="fas fa-bolt"></i> High-Tech y Electrodomésticos
+        </a>
+        <a href="beauté.html" class="category-btn">
+            <i class="fas fa-magic"></i> Belleza y Cuidado
+        </a>
+    </div>
+</div>
+    <div class="products-grid">
+
+    <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="ventilo 1.jpeg" alt="ventilador">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Ventilador original</h3>
+                      <p class="price">700C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="ventilo2.jpeg" alt="ventilador">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Ventilador original</h3>
+                      <p class="price">700C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+    
+         <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="ventilo3.jpeg" alt="ventilador">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Ventilador original</h3>
+                      <p class="price">700C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="ventilo4.jpeg" alt="ventilador">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Ventilador original</h3>
+                      <p class="price">700C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="torche 1.jpeg" alt="linterna de mano">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Linterna original</h3>
+                      <p class="price">400C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="torche 2.jpeg" alt="linterna de mano">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Linterna original</h3>
+                      <p class="price">400C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="torche 3.jpeg" alt="linterna de mano">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Linterna original</h3>
+                      <p class="price">400C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="torche 4.jpeg" alt="linterna de mano">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Linterna original</h3>
+                      <p class="price">400C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="torche 5.jpeg" alt="linterna de mano">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Linterna original</h3>
+                      <p class="price">400C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="ecouteur 1.jpeg" alt="auriculares inalámbricos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Auriculares inalámbricos originales</h3>
+                      <p class="price">390C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div> 
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="ecouteur7.jpeg" alt="auriculares inalámbricos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Auriculares inalámbricos originales</h3>
+                      <p class="price">390C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="ecouteur 3.jpeg" alt="auriculares inalámbricos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Auriculares inalámbricos originales</h3>
+                      <p class="price">390C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="ecouteur 4.jpeg" alt="auriculares inalámbricos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Auriculares inalámbricos originales</h3>
+                      <p class="price">390C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="ecouteur 5.jpeg" alt="auriculares inalámbricos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Auriculares inalámbricos originales</h3>
+                      <p class="price">390C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="ecouteur 6.jpeg" alt="auriculares inalámbricos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3> Auriculares inalámbricos originales</h3>
+                      <p class="price">390C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="écraseurs 1.jpeg" alt="trituradoras">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Trituradora de frutas para jugo</h3>
+                      <p class="price">310C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="écraseurs2.jpeg" alt="trituradoras">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Trituradora de frutas para jugo</h3>
+                      <p class="price">310C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="écraseurs3.jpeg" alt="trituradoras">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Trituradora de frutas para jugo</h3>
+                      <p class="price">310C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="couteur 5.jpeg" alt="cuchillos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Cuchillos originales</h3>
+                      <p class="price">210C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="couteaux pro 1.jpeg" alt="cuchillos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Cuchillos originales</h3>
+                      <p class="price">210C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+                <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="couteaux pro2.jpeg" alt="cuchillos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Cuchillos originales</h3>
+                      <p class="price">210C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="couteaux pro3.jpeg" alt="cuchillos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Cuchillos originales</h3>
+                      <p class="price">210C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+ 
+        <div class="product-card" data-category="High-Tech y Electrodomésticos">
+            <div class="product-img">
+                <img src="couteaux pro 4.jpeg" alt="cuchillos">
+                  <span class="tag">High-Tech y Electrodomésticos</span>
+                    </div>
+                      <div class="product-info">
+                        <h3>Cuchillos originales</h3>
+                      <p class="price">210C$</p>
+                      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto¿Está%20disponible?" 
+                     target="_blank" 
+                   class="whatsapp-btn">
+                <button class="buy-btn">pedir por whatsapp</button>
+                 </a>
+            </div>
+        </div>
+
+    </div> 
+</section>
+
+<script>
+    const btn = document.getElementById('burger-trigger');
+    const menu = document.getElementById('side-menu');
+    btn.onclick = () => { menu.classList.toggle('active'); btn.classList.toggle('open'); };
+
+    document.getElementById('search-input').onkeyup = function() {
+        let val = this.value.toLowerCase();
+        document.querySelectorAll('.product-card').forEach(card => {
+            let title = card.querySelector('h3').innerText.toLowerCase();
+            card.style.display = title.includes(val) ? "" : "none";
+        });
+    };
+</script>
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section brand-info">
+      <h2 class="footer-logo">Pineda<span>Pinell</span></h2>
+      <p>Expertos en comercio digital. Te acompañamos en la elección de los mejores smartphones y dispositivos electrónicos.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Tienda</h3>
+      <ul>
+        <li><a href="#">Smartphones</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Dispositivos</a></li>
+        <li><a href="#">Promociones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Ayuda e Información</h3>
+      <ul>
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Envíos y Devoluciones</a></li> 
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contacto Rápido</h3>
+      <p class="contact-item"><strong>📞 Tel:</strong> +505 8173 3386</p>
+      <p class="contact-item"><strong>📧 Email:</strong>marthitapinell83@gmail.com</p>
+      <p class="whatsapp-badge">WhatsApp 24/7</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 <strong>Pineda Pinell</strong> - Comercio Digital. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<script>
+    const searchInput = document.getElementById('search-input');
+    
+    searchInput.addEventListener('keyup', function() {
+        const filter = searchInput.value.toLowerCase();
+        // On cible les cartes d'offres (vérifiez que vos blocs d'offres ont bien la classe 'card')
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+            if (text.includes(filter)) {
+                card.style.display = ""; // Affiche la carte
+            } else {
+                card.style.display = "none"; // Cache la carte
+            }
+        });
+    });
+</script>
+</body>
+</html> 

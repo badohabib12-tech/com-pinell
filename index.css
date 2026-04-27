@@ -1,0 +1,494 @@
+/* ==========================================================================
+   1. RESET & BLOCAGE TRADUCTION GOOGLE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Force l'effacement du bandeau blanc de Google Traduction */
+.skiptranslate, .goog-te-banner-frame, #goog-gt-tt, .goog-te-balloon-frame {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+body {
+    background-color: #F8F9FA;
+    color: #333;
+    overflow-x: hidden;
+    top: 0 !important; /* Corrige le décalage forcé par Google */
+    position: static !important;
+}
+
+/* ==========================================================================
+   2. HEADER & NAVIGATION
+   ========================================================================== */
+.main-header {
+    background: #050B28;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    border-bottom: 2px solid #00F2FF;
+}
+
+.logo-img { height: 50px; width: auto; }
+
+.header-center { flex: 1; max-width: 400px; margin: 0 20px; }
+
+#search-input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #00F2FF;
+    background: white;
+    color: #050B28;
+    outline: none;
+}
+
+.burger-menu-pro {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-menu-pro span {
+    width: 30px;
+    height: 3px;
+    background: #00F2FF;
+    transition: 0.3s;
+}
+/* Style pour mobile */
+@media screen and (max-width: 768px) {
+    .search-container-mobile {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .search-icon {
+        font-size: 22px;
+        cursor: pointer;
+        padding: 5px;
+        z-index: 10;
+    }
+
+    /* La barre est invisible et compressée au départ */
+    .search-input-hidden {
+        width: 0;
+        opacity: 0;
+        padding: 0;
+        border: none;
+        transition: all 0.4s ease-in-out;
+        outline: none;
+        background: white;
+    }
+
+    /* La classe qui sera ajoutée en JavaScript lors du clic */
+    .search-input-hidden.show {
+        width: 180px; /* Ajustez la largeur selon vos besoins */
+        opacity: 1;
+        padding: 8px 12px;
+        border: 1px solid #00e5ff; /* Votre bleu cyan */
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+}
+
+/* Sur ordinateur, on affiche la barre normalement sans cliquer */
+@media screen and (min-width: 769px) {
+    .search-icon { display: none; }
+    .search-input-hidden {
+        width: 250px;
+        opacity: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+    }
+}
+
+/* MENU LATÉRAL */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #050B28;
+    padding: 100px 30px;
+    transition: 0.4s;
+    z-index: 10000;
+}
+
+.side-menu.active { right: 0; }
+.side-menu ul { list-style: none; }
+.side-menu li { margin-bottom: 20px; }
+.side-menu a { color: white; text-decoration: none; font-size: 1.2rem; font-weight: bold; }
+
+/* ==========================================================================
+   3. HERO & GRILLE PRODUITS (BIENVENUE EN BLANC)
+   ========================================================================== */
+   .hero {
+    background: white;
+    color: #050B28;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+
+/* Correction : Le bouton est maintenant en bleu */
+.btn {
+    display: inline-block;
+    background: #050B28; 
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00F2FF;
+    color: #050B28;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px #050B281a;
+    border: 1px solid #eee;
+}
+
+.card img { width: 100%; border-radius: 10px; height: 250px; object-fit: cover; }
+
+.card button {
+    background: #050B28;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style pour mobile */
+@media screen and (max-width: 768px) {
+    .search-container-mobile {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .search-icon {
+        font-size: 22px;
+        cursor: pointer;
+        padding: 5px;
+        z-index: 10;
+    }
+
+    /* La barre est invisible et compressée au départ */
+    .search-input-hidden {
+        width: 0;
+        opacity: 0;
+        padding: 0;
+        border: none;
+        transition: all 0.4s ease-in-out;
+        outline: none;
+        background: white;
+    }
+
+    /* La classe qui sera ajoutée en JavaScript lors du clic */
+    .search-input-hidden.show {
+        width: 180px; /* Ajustez la largeur selon vos besoins */
+        opacity: 1;
+        padding: 8px 12px;
+        border: 1px solid #00e5ff; /* Votre bleu cyan */
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+}
+
+/* Sur ordinateur, on affiche la barre normalement sans cliquer */
+@media screen and (min-width: 769px) {
+    .search-icon { display: none; }
+    .search-input-hidden {
+        width: 250px;
+        opacity: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+    }
+}
+
+/* ==========================================================================
+   4. TÉMOIGNAGES (TESTIMONIALS)
+   ========================================================================== */
+.testimonials { padding: 60px 5%; background: #fff; }
+.testimonials-header { text-align: center; margin-bottom: 40px; }
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #00F2FF;
+}
+
+.client-info { display: flex; align-items: center; margin-top: 20px; }
+.client-avatar { 
+    width: 45px; height: 45px; background: #050B28; color: white; 
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    margin-right: 15px; font-weight: bold;
+}
+
+/* ==========================================================================
+   5. SECTION CONTACT (BLEU-MARRON) & WHY US
+   ========================================================================== */
+.why-us { background: white; color: #050B28; padding: 60px 5%; }
+.why-us-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.contact-section { 
+    padding: 80px 5%; 
+    background: linear-gradient(135deg, #050B28 0%, #5D4037 100%); /* Changé en dégradé Bleu-Marron */
+    color: white;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact-form .form-group { margin-bottom: 15px; }
+.contact-form input, .contact-form select, .contact-form textarea {
+    width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;
+}
+
+.submit-btn {
+    background: #00F2FF; color: #050B28; font-weight: bold;
+    padding: 15px 30px; border: none; border-radius: 8px; cursor: pointer;
+}
+
+/* ==========================================================================
+   6. FOOTER COMPLET
+   ========================================================================== */
+.footer { background: #050B28; color: white; padding: 60px 5% 20px; margin-top: 50px; }
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h3 { color: #00F2FF; margin-bottom: 20px; }
+.footer-section ul { list-style: none; }
+.footer-section a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; }
+
+.footer-bottom {
+    text-align: center; padding-top: 40px; margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ==========================================================================
+   7. WHATSAPP FLOAT (FIXÉ)
+   ========================================================================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+
+.wa-badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background: #ff0000;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.wa-tooltip {
+    position: absolute;
+    right: 75px;
+    background: white;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover .wa-tooltip {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   8. MEDIA QUERIES (RESPONSIVE)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .header-center { display: none; }
+    .hero h1 { font-size: 1.8rem; }
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .card img { height: 180px; }
+    .whatsapp-float { bottom: 20px; right: 20px; width: 55px; height: 55px; }
+    .wa-tooltip { display: none; }
+}
+
+@media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+     .contact-container { grid-template-columns: 1fr; }
+}
+/* ==========================================================================
+   8. MEDIA QUERIES (OPTIMISÉES)
+   ========================================================================== */
+
+/* Pour les tablettes (iPad, etc.) */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes propres */
+        gap: 20px;
+    }
+    .header-center { max-width: 250px; }
+}
+
+/* Pour les mobiles standards (iPhone, Samsung) */
+@media (max-width: 768px) {
+    .header-center { display: none; } /* Cache la recherche pour libérer de l'espace */
+    
+    .main-header { padding: 0 15px; height: 70px; }
+    .logo-img { height: 40px; }
+
+    .hero { padding: 60px 15px; }
+    .hero h1 { font-size: 1.8rem; }
+    
+    /* Grille en 2 colonnes pour éviter les cartes géantes */
+    .grid { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 12px; 
+        padding: 0 10px; 
+    }
+    
+    .card { padding: 12px; }
+    .card img { height: 160px; }
+    .card h3 { font-size: 1rem; }
+
+    .whatsapp-float { 
+        bottom: 20px; 
+        right: 20px; 
+        width: 55px; 
+        height: 55px; 
+    }
+    .wa-tooltip { display: none; } /* On cache le texte flottant sur mobile */
+}
+
+/* Pour les très petits mobiles (Ecran étroit) */
+@media (max-width: 480px) {
+    /* On repasse en 1 colonne pour que le contenu respire */
+    .grid { grid-template-columns: 1fr; }
+    .contact-container { grid-template-columns: 1fr; }
+    
+    .hero h1 { font-size: 1.5rem; }
+    .hero p { font-size: 1rem; }
+    
+    .submit-btn { width: 100%; } /* Le bouton prend toute la largeur */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

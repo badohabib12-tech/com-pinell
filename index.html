@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/png" href="logo2.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comercial Pineda Pinell</title>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-left">
+        <a href="index.html" class="logo-link">
+            <img src="logo2.png" alt="Pineda Pinell" class="logo-img">
+        </a>
+    </div>
+
+<div class="header-center">
+    <div class="search-container-mobile">
+        <span id="search-icon-trigger" class="search-icon">🔍</span>
+        
+        <input type="text" placeholder="Buscar un producto..." id="dynamic-search-input" class="search-input-hidden">
+    </div>
+</div>
+
+        <button class="burger-menu-pro" id="burger-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <nav class="side-menu" id="side-menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Boutique.html">Tienda</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#À Propos">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    const btnOuvrir = document.getElementById('menu-btn');
+    const btnFermer = document.getElementById('close-btn');
+    const rideau = document.getElementById('rideau');
+
+    btnOuvrir.onclick = function() {
+        rideau.classList.add('ouvert');
+    };
+
+    btnFermer.onclick = function() {
+        rideau.classList.remove('ouvert');
+    };
+
+    document.querySelectorAll('.liens-navigation a').forEach(lien => {
+        lien.onclick = () => rideau.classList.remove('ouvert');
+    });
+</script>
+
+<section class="hero">
+  <h1>Bienvenido a nuestro sitio</h1>
+  <p>Descubre nuestros increíbles productos</p>
+  <a href="boutique.html" class="btn">Ver productos</a>
+</section>
+
+<main>
+  <h2 id="produits">Nuestros Productos</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="torche 1.jpeg" alt="Linterna">
+      <h3>Linterna de mano</h3>
+      <p>350 C$</p>
+      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+      target="_blank" 
+      class="whatsapp-btn">
+      <button>Pedir por WhatsApp</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="ecouteur 1.jpeg" alt="audífonos inalámbricos">
+      <h3>Audífonos inalámbricos</h3>
+      <p>500 C$</p>
+      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+      target="_blank" 
+      class="whatsapp-btn">
+      <button>Pedir por WhatsApp</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="sac pro 1.jpeg" alt="Bolso de mano">
+      <h3>Bolso de mano</h3>
+      <p>589 C$</p>
+      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+      target="_blank" 
+      class="whatsapp-btn">
+      <button>Pedir por WhatsApp</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="sac1.jpeg" alt="Bolso">
+      <h3>Bolso casual</h3>
+      <p>400 C$</p>
+      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+      target="_blank" 
+      class="whatsapp-btn">
+      <button>Pedir por WhatsApp</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="claire 1.jpeg" alt="base de maquillaje">
+      <h3>Base de maquillaje</h3>
+      <p>450 C$</p>
+      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+      target="_blank" 
+      class="whatsapp-btn">
+      <button>Pedir por WhatsApp</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="couteaux pro 1.jpeg" alt="cuchillos">
+      <h3>Juego de cuchillos</h3>
+      <p>450 C$</p>
+      <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20estoy%20interesado%20en%20el%20producto%20¿Está%20disponible?" 
+      target="_blank" 
+      class="whatsapp-btn">
+      <button>Pedir por WhatsApp</button>
+      </a>
+    </div>
+  </div>
+</main>
+
+<section class="testimonials">
+  <div class="testimonials-header">
+    <h2 data-i18n="testi_title">Lo que dicen nuestros clientes</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="testimonials-container">
+    <div class="testimonial-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="feedback">"¡Servicio increíble! Pedí mi iPhone desde León y lo recibí al día siguiente. El equipo está como nuevo. Recomiendo Pineda Pinell al 100%."</p>
+      <div class="client-info">
+        <div class="client-avatar">JR</div>
+        <div class="client-details">
+          <span class="name">Juan Rodríguez</span>
+          <span class="location">Managua, Nicaragua</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="feedback">"Muy serios y profesionales. El soporte de WhatsApp me ayudó a elegir el modelo adecuado según mi presupuesto. La garantía de 6 meses me da mucha tranquilidad."</p>
+      <div class="client-info">
+        <div class="client-avatar">MC</div>
+        <div class="client-details">
+          <span class="name">María Castro</span>
+          <span class="location">Granada, Nicaragua</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="feedback">"El mejor precio que encontré para accesorios originales. Entrega rápida y empaque cuidadoso. Se ha convertido en mi tienda de referencia para tecnología."</p>
+      <div class="client-info">
+        <div class="client-avatar">AL</div>
+        <div class="client-details">
+          <span class="name">Arlen López</span>
+          <span class="location">Estelí, Nicaragua</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-us">
+  <div class="why-us-container">
+    <div class="why-item">
+      <div class="icon-circle"><span class="icon">🚀</span></div>
+      <h3>Entrega Rápida</h3>
+      <p>En todo Nicaragua, recibe tus productos en 24h-48h.</p>
+    </div>
+    <div class="why-item">
+      <div class="icon-circle"><span class="icon">🛡️</span></div>
+      <h3>Garantía Certificada</h3>
+      <p>Todos nuestros productos son probados. Garantía de 6 meses incluida.</p>
+    </div>
+    <div class="why-item">
+      <div class="icon-circle"><span class="icon">💬</span></div>
+      <h3>Soporte Dedicado</h3>
+      <p>Nuestro equipo está disponible 7 días a la verge vía WhatsApp.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2 data-i18n="contact_title">Contáctanos</h2>
+      <p data-i18n="contact_subtitle">¿Tienes alguna duda sobre un producto o pedido? Nuestro equipo te responderá en menos de 24h.</p>
+      
+      <div class="info-item">
+        <span class="icon">➰</span>
+        <p>Managua, Nicaragua</p>
+      </div>
+      <div class="info-item">
+        <span class="icon">📧</span>
+        <p>support@pinedapinell.com</p>
+      </div>
+      <div class="info-item">
+        <span class="icon">💬</span>
+        <p>WhatsApp: +505 8173 3386</p>
+      </div>
+    </div>
+    <form class="contact-form">
+      <div class="form-group">
+        <input type="text" placeholder="Nombre completo" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <select required>
+          <option value="" disabled selected>Asunto de su mensaje</option>
+          <option value="achat">Compra de Smartphone</option>
+          <option value="sav">Servicio Post-Venta</option>
+          <option value="partenariat">Alianzas / Negocios</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Tu mensaje..." rows="5" required></textarea>
+      </div>
+     
+  <a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell%2C%20estoy%20interesado%20en%20el%20producto.%20%C2%BFEst%C3%A1%20disponible%3F" 
+   target="_blank" 
+   style="text-decoration: none;">
+   <button type="button" class="submit-btn">Enviar mensaje</button>
+</a>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section brand-info">
+      <h2 class="footer-logo">Pineda<span>Pinell</span></h2>
+      <p>Expertos en comercio digital. Te acompañamos en la elección de los mejores smartphones y gadgets electrónicos.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Tienda</h3>
+      <ul>
+        <li><a href="#">Smartphones</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Gadgets</a></li>
+        <li><a href="#">Promociones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Ayuda e Info</h3>
+      <ul>
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Envíos y Devoluciones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contacto Rápido</h3>
+      <p class="contact-item"><strong>📞 Tel:</strong> +505 8173 3386</p>
+      <p class="contact-item"><strong>📧 Email:</strong>marthitapinell83@gmail.com</p>
+      <p class="whatsapp-badge">WhatsApp 24/7</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 <strong>Pineda Pinell</strong> - Comercio Digital. Todos los derechos reservados.</p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('burger-trigger');
+    const menu = document.getElementById('side-menu');
+    btn.onclick = () => { menu.classList.toggle('active'); btn.classList.toggle('open'); };
+
+    document.getElementById('search-input').onkeyup = function() {
+        let val = this.value.toLowerCase();
+        document.querySelectorAll('.card').forEach(card => {
+            let title = card.querySelector('h3').innerText.toLowerCase();
+             card.style.display = title.includes(val) ? "" : "none";
+        });
+    };
+</script>
+</footer>
+
+<a href="https://wa.me/50581733386?text=Hola%20Pineda%20Pinell,%20tengo%20una%20consulta." 
+   class="whatsapp-float" 
+   target="_blank" 
+  29  rel="noopener noreferrer">
+  <span class="wa-tooltip">¿Necesitas ayuda?</span>
+  <span class="wa-badge">1</span>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Support">
+</a>
+
+<script>
+ cards.forEach(card => {
+    const text = card.textContent.toLowerCase();
+    if (text.includes(filter)) {
+        card.style.display = "block"; // Ou "flex" selon votre design
+        card.style.visibility = "visible";
+        card.style.opacity = "1";
+    } else {
+        card.style.display = "none";
+    }
+});
+</script>
+<script>
+
+    const trigger = document.getElementById('search-icon-trigger');
+    const input = document.getElementById('dynamic-search-input');
+
+    trigger.addEventListener('click', function() {
+        // Ajoute ou retire la classe "show" à chaque clic
+        input.classList.toggle('show');
+        
+        // Si la barre s'affiche, on met le focus dedans automatiquement
+        if (input.classList.contains('show')) {
+            input.focus();
+        }
+    });
+</script>
+
+</body>
+</html>
